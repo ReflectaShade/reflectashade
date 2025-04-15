@@ -2,59 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ReflectaShade - Stay Cool. Anywhere.</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ReflectaShade - Shade Smarter. Reflect the Heat.</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="ReflectaShade Logo" class="logo" />
-    <nav>
-      <ul>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#founders">Founders</a></li>
-        <li><a href="#waitlist">Join Waitlist</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <img src="logo.png" alt="ReflectaShade Logo" class="logo"/>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#technology">Technology</a></li>
+          <li><a href="#founders">Founders</a></li>
+          <li><a href="#waitlist" class="cta">Join the Waitlist</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
     <section class="hero">
-      <h1>Stay Cool. Anywhere.</h1>
-      <p>Premium-grade, reflective canopy solution designed to deliver elegant, portable shade that keeps you cool — wherever life takes you.</p>
-      <a href="#waitlist" class="cta">Join the Waitlist</a>
+      <div class="overlay">
+        <div class="container hero-content">
+          <h1>Shade Smarter. <br/> Reflect the Heat.</h1>
+          <a href="#waitlist" class="btn-primary">Join the Waitlist</a>
+        </div>
+      </div>
     </section>
 
-    <section id="features" class="features">
-      <h2>What sets ReflectaShade apart?</h2>
-      <ul>
-        <li><strong>Triple-Layer Technology:</strong> Reflective film, insulated core, and protective backing.</li>
-        <li><strong>UV Protection:</strong> Blocks 98% of harmful rays.</li>
-        <li><strong>Portable Design:</strong> Lightweight, foldable, and easy to pack.</li>
-        <li><strong>All-Season Use:</strong> Designed for outdoor activities year-round.</li>
-      </ul>
+    <section id="features" class="features container">
+      <h2>Premium Materials</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <img src="icon-reflective.png" alt="Reflective Technology"/>
+          <h3>Reflective Technology</h3>
+          <p>Deflects sunlight and significantly lowers interior temperatures.</p>
+        </div>
+        <div class="feature">
+          <img src="icon-insulated.png" alt="Insulated Layers"/>
+          <h3>Insulated Layers</h3>
+          <p>Engineered with a thermal core that maximizes coolness and blocks heat.</p>
+        </div>
+        <div class="feature">
+          <img src="icon-uv.png" alt="UV Protection"/>
+          <h3>UV Protection</h3>
+          <p>Blocks 98% of harmful UV rays—comfort and safety in one shade.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="founders" class="founders">
-      <h2>A shade born from real heat</h2>
-      <img src="founders.jpg" alt="Founders of ReflectaShade" class="founder-photo" />
+    <section id="technology" class="tech-section">
+      <div class="container">
+        <h2>Triple-Layer Technology</h2>
+        <img src="layers.png" alt="Triple Layer Tech Diagram" class="layer-diagram"/>
+        <ul class="tech-list">
+          <li><strong>Outer Layer:</strong> Durable Oxford/polyester blend.</li>
+          <li><strong>Middle Layer:</strong> Reflective bubble foil insulation.</li>
+          <li><strong>Inner Layer:</strong> Reflective liner that disperses heat and light.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="founders" class="founders container">
+      <h2>A Shade Born from Real Heat</h2>
+      <img src="founders.jpg" alt="Founders Photo" class="founder-photo"/>
       <p>The idea for ReflectaShade came to me during a Sunday at church. I was sitting under a standard canopy, sweating in the heat, and I realized — this thing’s doing almost nothing. It felt hotter under the shade than out in the open. That’s when it hit me: what if a canopy could actually reflect the heat instead of trapping it?</p>
       <p>With a baby girl on the way and being the provider for my family, I knew I had to chase this idea. I didn’t come from much — both of my parents didn’t finish high school, and I was the first in my family to graduate. I’ve always carried that pressure to be “the successful one,” and now I’m building something that can actually help people.</p>
       <p>ReflectaShade is more than a product. It’s about comfort, protection, and presence. My time as an EMT showed me how dangerous the sun can really be — not just discomfort, but dehydration, burns, even long-term damage. Whether it’s first responders needing shade in disaster zones, or parents protecting their kids at a backyard BBQ, I want ReflectaShade to serve them all.</p>
       <p>This brand is for everyone — built to feel premium, built to last, and built with heart.</p>
     </section>
 
-    <section id="waitlist" class="waitlist">
-      <h2>Be the first to know</h2>
+    <section id="waitlist" class="waitlist container">
+      <h2>Be the First to Know</h2>
       <p>Join our waitlist to get early access, exclusive offers, and product updates.</p>
-      <iframe width="540" height="305" src="https://sibforms.com/serve/MUIFAPhpS1gSwy4oN09mC0a-cp9rO400KWawKL73HE6fdcWMzI_Ug_yyKzLLPGDJ1xabq02rUyxEKYYaS3opP986wm1KNk56301bJFK0j5AXIsmlJo9pWCL034pEQQjSnWPgxP_PUVqSoxVbDCQLzm4pTUmp56cbZF55o1b_JVDpY4RWSC3_xm4cS67qWUIOjsWY-qRKttgrBit5" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+      <iframe src="https://sibforms.com/serve/MUIFAKHejzw8yZHZ5LzoxvTDDbFaaV8hCpV5BfTHA3QLNPo0VBqYaC0ZtZHTIoTSj-aA4uH-nIxJ9kUphOU4oYFDbTzK4fJizjDRJqNaGLJZyK-5k7eeSt9NMBaLEmMRZtb_YyKjPeKX8OCF0XtCeIr4rTCUUW59d1SM7HvYtU1h3I9I" width="100%" height="350" frameborder="0" scrolling="auto" allowfullscreen style="border: none;"></iframe>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 ReflectaShade. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 ReflectaShade. All rights reserved.</p>
+      <p>
+        <a href="mailto:reflectashade@gmail.com">Contact Us</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">Facebook</a>
+      </p>
+    </div>
   </footer>
 </body>
 </html>
-

@@ -23,6 +23,7 @@ body {
 
 /* Parallax Hero Section */
 .parallax {
+  background-image: url('assets/images/reflectashade_darktheme_canopy.png.png');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -138,32 +139,29 @@ footer a {
 
 /* Responsive Tweaks */
 @media (max-width: 768px) {
+  .parallax {
+    background-attachment: scroll;
+  }
   .parallax h1 {
     font-size: 1.8rem;
   }
-
   .parallax .cta {
     font-size: 0.9rem;
     padding: 10px 20px;
   }
-
   .feature-icons {
     flex-direction: column;
     gap: 30px;
   }
-
   .technology img {
     width: 100%;
   }
-
   .founders {
     padding: 40px 20px;
   }
-
   .founder-img {
     max-width: 100%;
   }
-
   .waitlist iframe {
     height: 300px;
   }

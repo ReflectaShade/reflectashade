@@ -33,9 +33,16 @@ h1, h2, h3 {
   display: flex;
   justify-content: center;
 }
-.logo {
-  height: 50px;
+.logo-banner {
+  text-align: center;
+  padding: 40px 0 20px;
 }
+.logo-banner img {
+  max-width: 220px;
+  height: auto;
+  display: inline-block;
+}
+
 .nav-links {
   list-style: none;
   display: flex;

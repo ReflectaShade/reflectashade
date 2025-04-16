@@ -23,7 +23,8 @@ body {
 
 /* Parallax Hero Section */
 .parallax {
-  background-image: url('B58B6A30-7244-4EF7-992B-30A56C2AED93.png');
+  background-image: url('https://raw.githubusercontent.com/[your-username]/reflectashade/main/B58B6A30-7244-4EF7-992B-30A56C2AED93.png');
+
   background-attachment: fixed;
   background-position: center top;
   background-repeat: no-repeat;

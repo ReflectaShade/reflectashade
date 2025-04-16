@@ -25,18 +25,20 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
   position: relative;
-  padding: 0 1rem;
+  padding-top: 120px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .parallax::before {
   content: '';
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.55);
   z-index: 1;
 }
 .parallax h1,
@@ -48,6 +50,7 @@ body {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 .parallax .cta {
   background: #ffffff;
@@ -105,4 +108,23 @@ footer a {
 .socials a {
   margin: 0 10px;
   font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .parallax {
+    padding-top: 80px;
+    height: auto;
+    background-attachment: scroll;
+    background-position: center;
+  }
+
+  .parallax h1 {
+    font-size: 2rem;
+  }
+
+  .feature-icons {
+    flex-direction: column;
+    gap: 30px;
+  }
 }

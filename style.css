@@ -23,7 +23,7 @@ body {
 
 /* Parallax Hero Section */
 .parallax {
-  background-image: url('assets/images/reflectashade_darktheme_canopy.png');
+  background-image: url('assets/images/reflectashade_darktheme_canopy.png.png');
   background-attachment: fixed;
   background-position: center top;
   background-repeat: no-repeat;

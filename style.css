@@ -25,7 +25,7 @@ body {
 .parallax {
   background-image: url('assets/images/reflectashade_darktheme_canopy.png.png');
   background-attachment: fixed;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -143,8 +143,11 @@ footer a {
 @media (max-width: 768px) {
   .parallax {
     background-attachment: scroll;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
     height: auto;
-    padding: 4rem 1rem 5rem;
+    padding: 5rem 1rem 6rem;
   }
 
   .parallax h1 {

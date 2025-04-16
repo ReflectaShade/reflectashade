@@ -23,6 +23,17 @@ body {
   padding: 80px 20px 60px;
   background-color: #111;
 }
+.hero-image {
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+.hero-image img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+}
 .hero h1 {
   font-size: 2.8rem;
   margin-bottom: 20px;
@@ -49,6 +60,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 60px;
+  flex-wrap: wrap;
 }
 .feature {
   text-align: center;

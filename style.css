@@ -107,7 +107,7 @@ body {
   width: 50px;
   height: 50px;
   margin-bottom: 10px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .feature:hover img {
@@ -176,6 +176,27 @@ a:focus {
 
   .parallax h1 {
     font-size: 2rem;
+  }
+
+  .feature-icons {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/* Mobile optimization for logo and canopy spacing */
+@media (max-width: 480px) {
+  .logo-section {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  .parallax {
+    padding-top: 130px;
+  }
+
+  .parallax h1 {
+    font-size: 1.8rem;
   }
 
   .feature-icons {

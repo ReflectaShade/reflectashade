@@ -1,21 +1,33 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   font-family: 'Outfit', sans-serif;
   background-color: #0b0b0b;
   color: #ffffff;
   line-height: 1.6;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
 }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
 .logo-section {
   text-align: center;
   margin-top: 40px;
 }
+
 .logo {
   max-width: 250px;
   height: auto;
 }
+
 .parallax {
   background-image: url('https://raw.githubusercontent.com/ReflectaShade/reflectashade/main/B58B6A30-7244-4EF7-992B-30A56C2AED93.png');
   background-attachment: fixed;
@@ -33,25 +45,34 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
 .parallax::before {
   content: '';
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.55);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
   z-index: 1;
 }
+
 .parallax h1,
 .parallax .cta {
   position: relative;
   z-index: 2;
 }
+
 .parallax h1 {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  text-shadow:
+    0 0 10px rgba(0, 0, 0, 0.7),
+    0 0 2px rgba(255, 255, 255, 0.1);
+  line-height: 1.3;
 }
+
 .parallax .cta {
   background: #ffffff;
   color: #000000;
@@ -62,52 +83,86 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease;
 }
+
 .parallax .cta:hover {
   transform: translateY(-2px);
 }
-.features, .technology, .founders, .waitlist {
+
+.features,
+.technology,
+.founders,
+.waitlist {
   padding: 60px 20px;
   text-align: center;
 }
+
 .feature-icons {
   display: flex;
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
 }
+
 .feature img {
   width: 50px;
   height: 50px;
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
 }
+
+.feature:hover img {
+  transform: scale(1.1);
+}
+
 .technology img {
   width: 90%;
   max-width: 600px;
 }
+
 .founder-img {
   width: 100%;
   max-width: 300px;
   border-radius: 50%;
   margin: 20px 0;
 }
+
 .waitlist iframe {
   width: 100%;
   max-width: 540px;
   height: 305px;
   border-radius: 8px;
 }
+
 footer {
   text-align: center;
   padding: 40px 20px;
   background-color: #0b0b0b;
   font-size: 0.9rem;
 }
+
 footer a {
   color: #ffffff;
+  transition: color 0.3s ease;
 }
+
+footer a:hover {
+  color: #ccc;
+  text-decoration: underline;
+}
+
 .socials a {
   margin: 0 10px;
   font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+}
+
+a:focus {
+  outline: 2px dashed #fff;
+  outline-offset: 4px;
 }
 
 /* Responsive adjustments */
